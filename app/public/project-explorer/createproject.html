@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-primary" style="position: relative;">
+        <span class="navbar-brand mb-0 h1 " style="color: #dee2e6;" href="#">Project Explorer</span>
+        <form name="searchForm" class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search Projects" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
+
+        <span href="#" style="margin-left: 15px; color: #dee2e6;">submit </span>
+
+        <div class="links" style="position: absolute; right: 30px;">
+            <a href="register.html" class="mr-2" style="color: #dee2e6;">Sign Up</a>
+            <a href="login.html" style="color: #dee2e6;">Login</a>
+        </div>
+    </nav>
+
+    <section class="container mt-4">
+        <h2>Submit Project</h2>
+        <form class="mx-auto w-75" name="submitProject">
+
+            <div class="form-group">
+                <label for="inputEmail4">Project Name:</label>
+                <input type="text" class="form-control" name="name" placeholder="Enter Project Name" >
+            </div>
+            <!-- <label>Project Name:</label> <br>
+            <input type="text" name="name"> <br> -->
+
+            <div class="form-group">
+                <label for="exampleFormControlTextarea1">Project Abstract</label>
+                <textarea type="text"  name="abstract" class="form-control" id="exampleFormControlTextarea1" rows="3" ></textarea>
+              </div>
+
+            <!-- <label>Project Abstract</label> <br>
+            <textarea type="text" name="abstract"></textarea> <br> -->
+
+            <div class="form-group">
+                <label for="inputEmail4"> Authors:</label>
+                <input type="text" class="form-control" name="authors" placeholder="Enter author names (seperated by commas)" >
+            </div>
+            <!-- <label>Authors:</label> <br>
+            <input type="text" name="authors"> <br> -->
+
+            <div class="form-group">
+                <label for="inputEmail4">Tag(s):</label>
+                <input type="text" class="form-control" name="tags" placeholder="Use # to tag a project with different topics (e.g #javascript #mongodb)" >
+            </div>
+            <!-- <label> Tag(s):</label> <br>
+            <input type="text" name="tags"> <br> -->
+
+            <button type="submit" class="btn btn-primary"> Submit</button>
+            <!-- <input type="submit"> -->
+
+
+        </form>
+    </section>
+
+    <footer class="bg-light mt-5 text-center text-lg-start">
+        <!-- Copyright -->
+        <div class="text-right p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+         Project Explorer © 2020 Copyright:
+          <a class="text-dark" href="https://mdbootstrap.com/">Edconnect</a>
+        </div>
+        <!-- Copyright -->
+      </footer>
+    
+</body>
+</html>
